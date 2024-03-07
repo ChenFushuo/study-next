@@ -1,23 +1,18 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import type { links, linkItem } from "./type";
 import "./index.scss";
+import Link from "next/link";
 
 function NavigationLinks({ links }: links) {
-  const router = useRouter();
-
   return (
-    <ul className="menu">
+    <div className="menu">
       {links.map((link: linkItem, index: number) => (
-        <li
-          className="menu_item"
-          key={index}
-          onClick={() => router.push(link.url)}>
+        <Link className="menu_item" href={link.url} key={index}>
           {link.text}
-        </li>
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 }
 

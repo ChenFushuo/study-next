@@ -43,7 +43,7 @@ body {
 @media screen and (min-width: 1200px) {
   .contain {
     width: 1200px;
-    /* background: pink; */
+    background: pink;
   }
 }
 
@@ -51,7 +51,7 @@ body {
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .contain {
     width: 900px;
-    /* background: blue; */
+    background: blue;
   }
 }
 
@@ -59,7 +59,7 @@ body {
 @media screen and (max-width: 767px) {
   .contain {
     width: 90%;
-    /* background: green; */
+    background: green;
   }
 }
 
